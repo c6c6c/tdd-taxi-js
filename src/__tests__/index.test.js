@@ -21,5 +21,7 @@ test('given_filepath_then_err', () => {
 });
 
 test('given_file_then_priceStr', () => {
-  expect(readFile("testData.txt")).toBe("收费6元\n收费7元\n收费13元\n收费7元\n");
+  expect(readFile('testData.txt')).toBe(
+    '收费6元\n收费7元\n收费13元\n收费7元\n'
+  );
 });
