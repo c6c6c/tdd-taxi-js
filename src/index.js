@@ -7,7 +7,6 @@ export default function main(testDataFile = 'testData.txt') {
     3. 将所有计费结果拼接并使用\n分割，然后保存到receipt变量中。
    */
   const receipt = readFile(testDataFile);
-  console.log(receipt);
   return receipt;
 }
 
