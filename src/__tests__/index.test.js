@@ -1,6 +1,7 @@
 import calc from '../calc/index';
 import readFile from '../fileUtil/readFile';
 import loadFile from '../fileUtil/loadFile';
+import main from '../index';
 
 test('given_km_and_minute_then_price', () => {
   expect(calc(1, 0)).toBe(6);
@@ -23,4 +24,5 @@ test('given_filepath_then_err', () => {
 test('given_file_then_priceStr', () => {
   const testStr = '收费6元\n收费7元\n收费13元\n收费7元\n';
   expect(readFile('testData.txt')).toBe(testStr);
+  expect(main()).toBe(testStr);
 });
